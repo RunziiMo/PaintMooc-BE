@@ -1,0 +1,15 @@
+<div class="modal-header">
+    <h3 class="modal-title" ng-if="!backendException">Em processamento</h3>
+    <h3 class="modal-title" ng-if="backendException">Ops!</h3>
+</div>
+<div class="modal-body">
+    <p ng-if="!backendException">
+        正在请求
+    </p>
+    <p ng-if="backendException">
+        Ocorreu um erro ao processar sua solicitação.
+    </p>
+</div>
+<div class="modal-footer" ng-if="backendException">
+    <button class="btn btn-primary" type="button" ng-click="closeWaiting()">OK</button>
+</div>

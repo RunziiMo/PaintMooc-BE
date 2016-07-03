@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="PaintMooc:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="paintmooc.war">
+      <element id="artifact" artifact-name="PaintMooc:war exploded" />
+    </root>
+  </artifact>
+</component>

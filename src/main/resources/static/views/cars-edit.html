@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>Edit Car {{carro.id}}</h1>
+    
+    <form novalidate="novalidate" name="myForm" class="form-horizontal">
+    <fieldset>
+        <div class="control-group" ng-class="{ 'has-error' : (myForm.brand.$invalid && submitted) || myForm.brand.$error.minlength }">
+            <label class="control-label" for="brand">Brand</label>
+            <div class="controls">
+                <input type="text" name="brand" id="brand" required="required" ng-model="car.brand" ng-minlength="2"/>
+                <p ng-show="myForm.brand.$error.minlength" class="help-block">Field "Brand" must be at least 2 characters long.</p>
+            </div>
+        </div>
+        <div class="control-group" ng-class="{ 'has-error' : myForm.model.$invalid && submitted }">
+            <label class="control-label" for="model">Model</label>
+            <div class="controls">
+                <input type="text" name="model" id="model" ng-model="car.model"  required="required"/>
+            </div>
+        </div>
+        <div class="control-group" ng-class="{ 'has-error' : (myForm.price.$invalid && submitted) || myForm.price.$error.min }">
+            <label class="control-label" for="price">Price</label>
+            <div class="controls">
+                <input type="number" name="price" id="price" ng-model="car.price"  required="required" min="10" max="9999"/>
+                <p ng-show="myForm.price.$error.min" class="help-block">Minimum value for "Price" is 10.</p>
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="cancel()" class="btn btn-small btn-danger">Cancel</a>
+                <a ng-click="editCar()" class="btn btn-small btn-primary">Save</a>
+            </div>
+        </div>
+    </fieldset>
+    </form>
+</div>

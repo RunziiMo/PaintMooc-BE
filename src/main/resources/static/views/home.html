@@ -1,0 +1,10 @@
+<h1>Welcome!</h1>
+<div ng-show="authenticated">
+    <p>id: {{user.id}}</p>
+    <p>昵称: {{user.username}}</p>
+    <p>级别: {{user.role}}</p>
+    <p>手机号: {{user.phone}}</p>
+</div>
+<div ng-show="!authenticated">
+    <p>请登录</p>
+</div>

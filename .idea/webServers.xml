@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e97c6cc4-265d-4cb5-81c0-8506ed06a2d0" name="fuck" url="http://120.27.54.84">
+        <fileTransfer host="120.27.54.84" port="22" rootFolder="/home/runzii/paintmooc" accessType="SFTP" password="df98df92df9edf9cdf9fdfc9dfc4dfc7" username="runzii">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
